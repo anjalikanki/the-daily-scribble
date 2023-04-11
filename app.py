@@ -86,7 +86,7 @@ def register():
 
         if User.query.filter_by(email=form.email.data).first():
 
-            #User already exists
+            #User already existss
             flash("This user already exists")
             return redirect(url_for('login'))
 
